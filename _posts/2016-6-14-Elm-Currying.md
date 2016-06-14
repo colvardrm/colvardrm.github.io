@@ -13,13 +13,20 @@ This appears to be a function that takes a function that maps from one object **
 
 ```elm
 map : (a->b) -> List a -> List b
+
+-- Two parameters and, as always, one return value. Not good.
+
 toString : a -> String
 
--- List.map toString = <function>: List a -> List String
+-- One parameter and one return. Fits what we want.
+
+listToString = List.map toString
+
+-- listToString = <function>: List a -> List String. One parameter and one return value. Good for currying
 
 example = listToString [1, 2, 3, 4]
     
---example is now a List String
+--  example is now a List String
 ```
 
 This actually doesn't cause an error. It's perfectly fine.
