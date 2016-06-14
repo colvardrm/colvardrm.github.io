@@ -23,6 +23,7 @@ toString : a -> String
 listToString = List.map toString
 
 -- listToString = <function>: List a -> List String. 
+
 -- One parameter and one return value. Good for currying
 
 example = listToString [1, 2, 3, 4]
