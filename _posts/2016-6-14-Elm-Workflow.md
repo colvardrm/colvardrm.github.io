@@ -20,3 +20,4 @@ List.map \n -> n*n [1,2,3,4]
 
 and this only becomes more true as the functions get more complicated
 
+..* For functional languages specifically, a helpful tip would be to pretend the function you need in the current function already exists, then write the functions you need to make that true. It's much easier to think of what you need now than what you'll need to do for the entire project to work all at once.
