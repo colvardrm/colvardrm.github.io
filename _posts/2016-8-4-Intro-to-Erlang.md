@@ -7,16 +7,20 @@ Erlang is a functional programming language developed by Ericsson originally for
 ```erlang
 -module(hello_world)         %the module declaration
 
-%% Exported methods can be used outside of the module. The numbers after the slash represents the "arity", or number of arguments
+%% Exported methods can be used outside of the module. 
+%% The numbers after the slash represent the "arity", or number of arguments
 -export(hello_world/0, foo/1)
 
--record(state, {text = "" :: string()}).  %Record named state with a field for text, annotated as a string with a default value of ""
+%% Record named state with a field for text, annotated as a string with a default value of ""
+-record(state, {text = "" :: string()}).
 
-foo(State=#state{text = TextToPrint}) ->      %Method showing off the record syntax and variables
-  TextToPrint = "Hi",                         %This will cause an error unless TextToPrint is already "Hi".
+%% Method showing off the record syntax and variables
+foo(State=#state{text = TextToPrint}) ->
+  TextToPrint = "Hi",       %This will cause an error unless TextToPrint is already "Hi".
   io:format("~p~n", [TextToPrint]).
 
-hello_world() ->             %Method hello_world, which simply prints out "Hello World!"
+%% Method hello_world, which simply prints out "Hello World!"
+hello_world() ->
   io:format("Hello World!").
 
 
