@@ -35,4 +35,4 @@ This actually doesn't cause an error. It's perfectly fine.
 
 Confused? Welcome to currying.
 
-Currying, in simple terms, is the process of taking a function that takes multiple arguments, and making it only take one. This is one of the things you can do if you have functions as a first class citizen. As you saw in the example, you can make "shortcuts" for functions by going from more generic functions with fewer specified parameters to more specific functions that you pass in as arguments. Currying is pretty important and useful, but that should be a decent enough example for now.
+Currying, in simple terms, is the process of taking a function that takes multiple arguments, and making it only take one. This is one of the things you can do if you have functions as a first class citizen, as well as lazy evaluation. As you saw in the example, you can make "shortcuts" for functions by going from more generic functions with fewer specified parameters to more specific functions that you pass in as arguments. Currying is pretty important and useful, but that should be a decent enough example for now.
