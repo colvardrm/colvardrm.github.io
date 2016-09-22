@@ -8,15 +8,18 @@ One of the problems I've faced recently is in the way to approach the workflow i
 * One function should do one thing. It is strongly discouraged to have functions with side effects in Elm. Each function should do exactly what it says in the name, and nothing else
 <li> Because one function should do one thing, make a function for any process more complicated than a few lines at most. This makes the code much more readable. Also, avoid anonymous functions where the purpose isn't immediately obvious. 
 
-```
+```elm
 List.map square [1,2,3,4] 
 ```
 
+
 is more readable than 
 
-```
+
+```elm
 List.map \n -> n*n [1,2,3,4]
 ```
+
 
 and this only becomes more true as the functions get more complicated
 </li>
