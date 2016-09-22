@@ -7,7 +7,7 @@ One of the problems I've faced recently is in the way to approach the workflow i
 
 * One function should do one thing. It is strongly discouraged to have functions with side effects in Elm. Each function should do exactly what it says in the name, and nothing else
 <li> Because one function should do one thing, make a function for any process more complicated than a few lines at most. This makes the code much more readable. Also, avoid anonymous functions where the purpose isn't immediately obvious. 
-
+</li>
 ```elm
 List.map square [1,2,3,4] 
 ```
@@ -21,6 +21,6 @@ List.map \n -> n*n [1,2,3,4]
 ```
 
 
-and this only becomes more true as the functions get more complicated
-</li>
+This only becomes more true as the functions get more complicated.
+
 * For functional languages specifically, a helpful tip would be to pretend the function you need in the current function already exists, then write the functions you need to make that true. It's much easier to think of what you need now than what you'll need to do for the entire project to work all at once.
