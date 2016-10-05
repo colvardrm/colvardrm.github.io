@@ -2,7 +2,7 @@
 layout: post	
 title: Pattern Matching in Erlang
 ---
-Pattern matching is a simple concept that provides a lot of power to your programs. Erlang and Elm both use it in case...of statements, and it is used to describe how to deal with different inputs to the function. In Erlang, if a case statement doesn't have a catch-all clause, the compiler won't complain. The program will simply crash if it gest an unexpected input, which is actually a good thing in Erlang. In Elm, you must handle all cases for the program to even compile.
+Pattern matching is a simple concept that provides a lot of power to your programs. Erlang and Elm both use it in case...of statements, and it is used to describe how to deal with different inputs to the function. In Erlang, if a case statement doesn't have a catch-all clause, the compiler won't complain. The program will simply crash if it gets an unexpected input, which is actually a good thing in Erlang. In Elm, you must handle all cases for the program to even compile.
 
 ```erlang
 
